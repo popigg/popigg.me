@@ -4,8 +4,8 @@ import { Link } from 'react-router';
 class Sidebar extends React.Component {
     render() {
         return (
-            <aside>
-                <nav>
+            <aside id="sidebar-wrapper">
+                <nav className="sidebar-nav">
                     <ul>
                         <li><Link to="/about.me">about.me</Link></li>
                         <li><Link to="/resu.me">resu.me</Link></li>
@@ -14,6 +14,7 @@ class Sidebar extends React.Component {
                         <li><Link to="/find.me">find.me</Link></li>
                     </ul>
                 </nav>
+                &nbsp;
             </aside>
         )
     }
