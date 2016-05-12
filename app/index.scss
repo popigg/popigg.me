@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600,700,300italic);
+
 body {
   background-color: #79C5FF;
   color: #004F8B;
   margin:0;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 a {
@@ -12,31 +15,13 @@ a {
   }
 }
 
-#wrapper {
-  padding-right: 250px;
+ul {
+  li {
+    list-style-type: none;
+  }
 }
 
-#sidebar-wrapper {
-  margin-left: -250px;
-  left: 100%;
-  width: 250px;
+#sidebar {
   background: #003D6B;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 1000;
+  height: 100vh;
 }
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#page-content-wrapper {
-  width: 100%;
-}
-
