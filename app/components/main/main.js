@@ -10,20 +10,14 @@ class Main extends React.Component {
         const { pathname } = this.props.location
 
         return (
-            <div className="wrapper">
-                <Sidebar/>
+            <div className="row">
+              <div className="col-xs-8 center-xs">
+                  <ReactCSSTransitionGroup component="main" id="wrap">
+                      {React.cloneElement(this.props.children || <About />, { key: pathname })}
+                  </ReactCSSTransitionGroup>
+              </div>
 
-                <div id="page-content-wrapper">
-                    <div className="page-content">
-                        <div className="container">
-                            <div className="row">
-                                <ReactCSSTransitionGroup component="main" id="wrap">
-                                    {React.cloneElement(this.props.children || <About />, { key: pathname })}
-                                </ReactCSSTransitionGroup>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <Sidebar/>
             </div>
         )
     }
