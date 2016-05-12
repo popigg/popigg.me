@@ -1,6 +1,5 @@
 var koa     = require('koa');
 var views   = require('co-views');
-var serve   = require('koa-static');
 var app     = koa();
 
 if (process.env.NODE_ENV == 'development') {
@@ -8,8 +7,6 @@ if (process.env.NODE_ENV == 'development') {
 } else {
   var render = views(__dirname + '/public', { map: { html: 'swig' }});
 }
-
-app.use(serve(__dirname + '/build'));
 
 app.use(function *(){
     this.body = yield render('index');
