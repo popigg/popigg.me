@@ -1,10 +1,13 @@
+// General
+
+// Font
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600,700,300italic);
 
 body {
-  background-color: #79C5FF;
-  color: #004F8B;
   margin:0;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, .8);
 }
 
 a {
@@ -15,13 +18,49 @@ a {
   }
 }
 
-ul {
-  li {
+// Sidebar
+.sidebar {
+  background: rgb(0, 72, 128);
+  height: 100vh;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+
+  a {
+    // color: rgb(255, 158, 0);
+    color: rgb(255, 204, 0);
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__listItem {
+    margin-top: 1.7rem;
+  }
+
+  &__icon {
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &--inception {
+      background: url('../public/images/power-button.svg') no-repeat;
+    }
+    &--inspire {
+      background: url('../public/images/light-bulb.svg') no-repeat;
+    }
+    &--jobs {
+      background: url('../public/images/rocket-launch.svg') no-repeat;
+    }
+    &--blog {
+      background: url('../public/images/chat.svg') no-repeat;
+    }
+    &--contact {
+      background: url('../public/images/target.svg') no-repeat;
+    }
+  }
+
+  &__listItem--noDecoration {
     list-style-type: none;
   }
-}
-
-#sidebar {
-  background: #003D6B;
-  height: 100vh;
 }
