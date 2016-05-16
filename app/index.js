@@ -3,25 +3,24 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { createHistory, useBasename } from 'history';
 import { Router, Route } from 'react-router';
-import Main from './components/main/main';
-import About from './routes/about/about';
-import Resume from './routes/resume/resume';
-import Project from './routes/project/project';
-import Inspire from './routes/inspire/inspire';
-import Find from './routes/find/find';
+import Main from './components/main';
+import About from './routes/about';
+import Read from './routes/read';
+import Jobs from './routes/jobs';
+import Inspire from './routes/inspire';
+import Contact from './routes/contact';
 
 const history = useBasename(createHistory)({
-    basename: '/'
+    basename: '/~popigg/popigg.me'
 });
 
 ReactDom.render(
     <Router history={history}>
         <Route path="/" component={Main}>
-            <Route path="about.me" component={About} />
-            <Route path="resu.me" component={Resume} />
-            <Route path="project.me" component={Project} />
-            <Route path="inspire.me" component={Inspire} />
-            <Route path="find.me" component={Find} />
+            <Route path="inspire" component={Inspire} />
+            <Route path="jobs" component={Jobs} />
+            <Route path="read" component={Read} />
+            <Route path="contact" component={Contact} />
         </Route>
     </Router>
     , document.getElementById('content'));
