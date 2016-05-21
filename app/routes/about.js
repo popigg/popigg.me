@@ -4,13 +4,17 @@ class About extends React.Component {
     render() {
         return (
             <div>
-              <p>Hi, my name is <span className="">Pablo Gomez</span>.
+              <p>Hi!!! thanks for visiting, my name is <span className="">Pablo Gomez</span>.
                 <br/>
-                Thanks for visiting me. 
-                Find me CV <a href="https://stackoverflow.com/cv/popigg">here</a>.
+                I am father, sportman, reader, traveller, thinker and Generalist Developer,
+                now at <a target="_blank" href="http://sentisis.com">Sentisis</a>
                 <br/>
-                how i see the world around us?
+                <span className="">
+                  Read more <a target="_blank" href="https://stackoverflow.com/cv/popigg">here</a>.
+                </span>
+                <br/>
               </p>
+              
               <ul>
                 <li>
                   <span className="about__listItem--big">cretivity</span>
@@ -31,6 +35,10 @@ class About extends React.Component {
                 <li>
                   <span className="about__listItem--big">shipping</span>
                   <p>building things is because there is a relation between builder and consumer. I believe in early feedback.</p>
+                </li>
+                <li>
+                  <span className="about__listItem--big">freedom</span>
+                  <p>loving my family and my free time make me want to be eficient i want to   go home early</p>
                 </li>
               </ul>
             </div>
