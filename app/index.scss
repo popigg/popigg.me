@@ -8,11 +8,13 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.2rem;
   color: rgba(0, 0, 0, .8);
+  font-weight: 300;
 }
 
 a {
-  color: #FF9E00;
+  color: rgb(16, 151, 255);
   text-decoration: none;
+  font-weight: 600;
   &:hover {
     text-decoration: none;
   }
@@ -20,14 +22,14 @@ a {
 
 // Sidebar
 .sidebar {
-  background: rgb(0, 72, 128);
-  height: 100vh;
+  background: rgb(255, 239, 192);
   padding-left: 1rem;
   font-size: 1.3rem;
+  height: 5000px;
 
   a {
-    // color: rgb(255, 158, 0);
-    color: rgb(255, 204, 0);
+    color: rgb(255, 73, 0);
+    font-weight: 300;
     text-decoration: none;
     &:hover {
       text-decoration: none;
@@ -36,6 +38,10 @@ a {
 
   &__listItem {
     margin-top: 1.7rem;
+
+    &--noDecoration {
+      list-style-type: none;
+    }
   }
 
   &__icon {
@@ -59,8 +65,8 @@ a {
       background: url('../public/images/target.svg') no-repeat;
     }
   }
+}
 
-  &__listItem--noDecoration {
-    list-style-type: none;
-  }
+#content {
+  height: 5000px;
 }
