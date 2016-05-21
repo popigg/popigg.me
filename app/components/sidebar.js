@@ -8,24 +8,34 @@ class Sidebar extends React.Component {
                 <nav>
                     <ul>
                       <li className="sidebar__listItem sidebar__listItem--noDecoration">
-                        <span className="sidebar__icon sidebar__icon--inception">&nbsp;</span>
-                        <Link to="/">Inception</Link>
+                        <Link to="/">
+                          <span className="sidebar__icon sidebar__icon--inception">&nbsp;</span>
+                          Inception
+                        </Link>
                       </li>
                       <li className="sidebar__listItem sidebar__listItem--noDecoration">
-                        <span className="sidebar__icon sidebar__icon--inspire">&nbsp;</span>
-                        <Link to="/inspire">What Inspires me</Link>
+                        <Link to="/inspire">
+                          <span className="sidebar__icon sidebar__icon--inspire">&nbsp;</span>
+                          What Inspires me
+                        </Link>
                       </li>
                       <li className="sidebar__listItem sidebar__listItem--noDecoration">
-                        <span className="sidebar__icon sidebar__icon--jobs">&nbsp;</span>
-                        <Link to="/jobs">Pet Projects</Link>
+                        <Link to="/jobs">
+                          <span className="sidebar__icon sidebar__icon--jobs">&nbsp;</span>
+                          Pet Projects
+                        </Link>
                       </li>
                       <li className="sidebar__listItem sidebar__listItem--noDecoration">
-                        <span className="sidebar__icon sidebar__icon--blog">&nbsp;</span>
-                        <Link to="/read">Stories i like to tell</Link>
+                        <Link to="/read">
+                          <span className="sidebar__icon sidebar__icon--blog">&nbsp;</span>
+                          Stories i like to tell
+                        </Link>
                       </li>
                       <li className="sidebar__listItem sidebar__listItem--noDecoration">
-                        <span className="sidebar__icon sidebar__icon--contact">&nbsp;</span>
-                        <Link to="/contact">Find me</Link>
+                        <Link to="/contact">
+                          <span className="sidebar__icon sidebar__icon--contact">&nbsp;</span>
+                          Find me
+                        </Link>
                       </li>
                     </ul>
                 </nav>
