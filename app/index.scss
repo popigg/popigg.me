@@ -3,6 +3,13 @@
 // Font
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600,700,300italic);
 
+// partials
+@import 'sidebar';
+@font-face {
+  font-family: 'CRU-pokawin-Alize';
+  src:  url('../public/fonts/CRU-pokawin-Alize-pencil-regular.ttf') format('truetype');
+}
+
 body {
   margin:0;
   font-family: 'Titillium Web', sans-serif;
@@ -16,57 +23,113 @@ a {
   text-decoration: none;
   font-weight: 600;
   &:hover {
-    text-decoration: none;
-  }
-}
-
-// Sidebar
-.sidebar {
-  background: rgb(255, 239, 192);
-  padding-left: 1rem;
-  font-size: 1.3rem;
-  height: 5000px;
-
-  a {
-    color: rgb(255, 73, 0);
-    font-weight: 300;
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  &__listItem {
-    margin-top: 1.7rem;
-
-    &--noDecoration {
-      list-style-type: none;
-    }
-  }
-
-  &__icon {
-
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
-    &--inception {
-      background: url('../public/images/power-button.svg') no-repeat;
-    }
-    &--inspire {
-      background: url('../public/images/light-bulb.svg') no-repeat;
-    }
-    &--jobs {
-      background: url('../public/images/rocket-launch.svg') no-repeat;
-    }
-    &--blog {
-      background: url('../public/images/chat.svg') no-repeat;
-    }
-    &--contact {
-      background: url('../public/images/target.svg') no-repeat;
-    }
+    color: rgba(16, 151, 255, 0.45);
   }
 }
 
 #content {
-  height: 5000px;
+  height: 1000px;
+
+  .about__header {
+    margin-top: 3rem;
+    font-size: 2rem;
+
+    &--highlight {
+      font-size: 3rem;
+    }
+  }
+
+  .about__item {
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      font-family: 'CRU-pokawin-Alize';
+      font-size: 8rem;
+    }
+
+    p {
+      font-weight: 300;
+    }
+
+    &--creativity {
+      background: url('../public/images/brush-stroke-orange.svg') no-repeat center;
+      background-size: 439px 136px;
+      &:hover {
+        span {
+          font-size: 3.9rem;
+        }
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+          display: block;
+        }
+      }
+    }
+
+    &--challenge {
+      background: url('../public/images/brush-stroke-green.svg') no-repeat center;
+      background-size: 439px 136px;
+      &:hover {
+        span {
+          font-size: 3.9rem;
+        }
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+          display: block;
+        }
+      }
+    }
+
+    &--teamwork {
+      background: url('../public/images/brush-stroke-blue.svg') no-repeat center;
+      background-size: 439px 136px;
+      &:hover {
+        span {
+          font-size: 3.9rem;
+        }
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+          display: block;
+        }
+      }
+    }
+
+    &--poc {
+      background: url('../public/images/brush-stroke-yellow.svg') no-repeat center;
+      background-size: 439px 136px;
+      &:hover {
+        span {
+          font-size: 3.9rem;
+        }
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+          display: block;
+        }
+      }
+    }
+
+    &--freedom {
+      background: url('../public/images/brush-stroke-pink.svg') no-repeat center;
+      background-size: 439px 136px;
+      &:hover {
+        span {
+          font-size: 3.9rem;
+        }
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+          display: block;
+        }
+      }
+    }
+
+    &--description {
+      display: none;
+    }
+  }
 }
