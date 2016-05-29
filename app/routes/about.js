@@ -4,43 +4,52 @@ class About extends React.Component {
     render() {
         return (
             <div>
-              <p>Hi!!! thanks for visiting, my name is <span className="">Pablo Gomez</span>.
-                <br/>
-                I am father, sportman, reader, traveller, thinker and Generalist Developer,
-                now at <a target="_blank" href="http://sentisis.com">Sentisis</a>
-                <br/>
-                <span className="">
-                  Read more <a target="_blank" href="https://stackoverflow.com/cv/popigg">here</a>.
-                </span>
+              <div className="about__header">
+                hello!!! my name is <span className="about__header--highlight">Pablo Gomez Guerrero</span>
+              </div>
+              <p>
+                father, sportman, reader, traveller, thinker and Generalist Developer,
+                now at <a target="_blank" href="http://sentisis.com">Sentisis</a>.
                 <br/>
               </p>
-              
-              <ul>
-                <li>
-                  <span className="about__listItem--big">cretivity</span>
-                  <p>change happens so quickly, i try to find the inspiration to do valuable things.</p>
-                </li>
-                <li>
-                  <span className="about__listItem--big">challenge</span>
-                  <p>repeated jobs are boring, and challenges to learn something new is where i amuse.</p>
-                </li>
-                <li>
-                  <span className="about__listItem--big">teamwork</span>
-                  <p>working with people that complements you makes you better, so i need people around me.</p>
-                </li>
-                <li>
-                  <span className="about__listItem--big">proof of concept</span>
-                  <p>perfect first tries are unusual, failing and improving is more what use to happen to me.</p>
-                </li>
-                <li>
-                  <span className="about__listItem--big">shipping</span>
-                  <p>building things is because there is a relation between builder and consumer. I believe in early feedback.</p>
-                </li>
-                <li>
-                  <span className="about__listItem--big">freedom</span>
-                  <p>loving my family and my free time make me want to be eficient i want to   go home early</p>
-                </li>
-              </ul>
+
+              <div className="col-xs-offset-2 col-xs-8 about__item">
+                <div className="row center-xs about__item--creativity">
+                  <span>creativity</span>
+                  <p className="about__item--description">
+                    change happens so quickly, find the inspiration to do valuable things.
+                  </p>
+                </div>
+
+                <div className="row center-xs about__item--challenge">
+                  <span>challenge</span>
+                  <p className="about__item--description">
+                    repeated jobs are boring, use challenges to learn something new
+                  </p>
+                </div>
+
+                <div className="row center-xs about__item--teamwork">
+                  <span>teamwork</span>
+                  <p className="about__item--description">
+                    working with people that complements you makes you better.
+                  </p>
+                </div>
+
+                <div className="row center-xs about__item--poc">
+                  <span>p.o.c.</span>
+                  <p className="about__item--description">
+                    perfect first tries are unusual, get the feeling with a proof of concept.
+                  </p>
+                </div>
+
+                <div className="row center-xs about__item--freedom">
+                  <span>freedom</span>
+                  <p className="about__item--description">
+                    loving my family and my free time make me want to be eficient.
+                  </p>
+                </div>
+              </div>
+              <p>Do you want to read <a target="_blank" href="https://stackoverflow.com/cv/popigg">more</a>?</p>
             </div>
         )
     }
