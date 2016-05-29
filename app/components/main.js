@@ -11,7 +11,7 @@ class Main extends React.Component {
 
         return (
             <div className="row">
-              <div className="col-xs-offset-1 col-xs-8 around-xs">
+              <div className="col-xs-offset-1 col-xs-7 around-xs">
                   <ReactCSSTransitionGroup component="main" id="wrap">
                       {React.cloneElement(this.props.children || <About />, { key: pathname })}
                   </ReactCSSTransitionGroup>
