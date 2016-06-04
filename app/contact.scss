@@ -1,0 +1,47 @@
+// contact
+
+
+.contact {
+  &__header {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  &__social {
+    &--github {
+      background: url('../public/images/github-big-logo.svg') no-repeat center;
+      padding: 1rem;
+      margin-right: 1rem;
+      background-size: 35px;
+    }
+    &--bitbucket {
+      background: url('../public/images/bitbucket-logo.svg') no-repeat center;
+      padding: 1rem;
+      margin-right: 1rem;
+      background-size: 35px;
+    }
+    &--twitter {
+      background: url('../public/images/twitter.svg') no-repeat center;
+      padding: 1rem;
+      margin-right: 1rem;
+      background-size: 35px;
+    }
+    &--linkedin {
+      background: url('../public/images/linkedin-logo.svg') no-repeat center;
+      padding: 1rem;
+      margin-right: 1rem;
+      background-size: 35px;
+
+      &Description {
+        position: relative;
+        top: 0.3rem;
+      }
+    }
+    &--email {
+      background: url('../public/images/send-symbol.svg') no-repeat center;
+      padding: 1rem 1rem 1.3rem 1rem;
+      margin-right: 1rem;
+      background-size: 35px;
+    }
+  }
+}
