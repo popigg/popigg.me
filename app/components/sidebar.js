@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import circle from '../../public/images/grunge-circle-3.svg';
 
 class Sidebar extends React.Component {
     render() {
@@ -34,6 +35,7 @@ class Sidebar extends React.Component {
                       </li>
                     </ul>
                 </nav>
+                <img src={circle} className="sidebar__elem--decoration"/>
             </aside>
         )
     }
