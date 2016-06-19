@@ -1,0 +1,71 @@
+// About
+.about__header {
+  margin-top: 3rem;
+  font-size: 2rem;
+
+  &--highlight {
+    font-size: 3rem;
+  }
+}
+
+.about__item {
+  div {
+    background-size: 439px 136px;
+    height: 136px;
+
+    h3 {
+      font-family: 'CRU-pokawin-Alize';
+      font-size: 6rem;
+      font-weight: normal;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      transition: font-size 0.35s;
+    }
+
+    p {
+      font-weight: 300;
+      opacity: 0;
+    	transform: translate3d(0,10px,0);
+      transition: opacity 0.35s, transform 0.35s;
+    }
+
+    &:hover {
+      cursor: pointer;
+      h3 {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+        display: block;
+        margin-top: -0.5rem;
+        opacity: 1;
+      	transform: translate3d(0,0,0);
+      }
+    }
+  }
+
+  &--creativity {
+    background: url('../public/images/brush-stroke-orange.svg') no-repeat center;
+  }
+
+  &--challenge {
+    background: url('../public/images/brush-stroke-green.svg') no-repeat center;
+
+  }
+
+  &--teamwork {
+    background: url('../public/images/brush-stroke-blue.svg') no-repeat center;
+  }
+
+  &--poc {
+    background: url('../public/images/brush-stroke-yellow.svg') no-repeat center;
+  }
+
+  &--freedom {
+    background: url('../public/images/brush-stroke-pink.svg') no-repeat center;
+  }
+
+  &--description {
+    display: none;
+  }
+}
