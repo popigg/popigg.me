@@ -2,7 +2,7 @@ import './index.scss';
 import React from 'react';
 import ReactDom from 'react-dom';
 import { createHistory, useBasename } from 'history';
-import { Router, Route } from 'react-router';
+import { IndexRoute, Router, Route } from 'react-router';
 import Main from './components/main';
 import About from './routes/about';
 import Read from './routes/read';
@@ -17,6 +17,7 @@ const history = useBasename(createHistory)({
 ReactDom.render(
     <Router history={history}>
         <Route path="/" component={Main}>
+            <IndexRoute component={About} />
             <Route path="inspire" component={Inspire} />
             <Route path="jobs" component={Jobs} />
             <Route path="read" component={Read} />
