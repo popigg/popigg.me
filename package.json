@@ -25,10 +25,10 @@
   "dependencies": {
     "co-views": "^2.1.0",
     "history": "^1.17.0",
-    "koa": "^1.1.2",    
-    "react": "^0.14.3",
-    "react-addons-transition-group": "^0.14.3",
-    "react-dom": "^0.14.3",
+    "koa": "^1.1.2",
+    "react": "^0.14.8",
+    "react-addons-css-transition-group": "^0.14.8",
+    "react-dom": "^0.14.8",
     "react-router": "^1.0.3",
     "swig": "^1.4.2"
   },
