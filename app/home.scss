@@ -1,5 +1,5 @@
 // About
-.about__header {
+.home__header {
   margin-top: 3rem;
   font-size: 2rem;
 
@@ -8,7 +8,8 @@
   }
 }
 
-.about__item {
+.home__item {
+  margin-left: 2rem;
   div {
     background-size: 439px 136px;
     height: 136px;
@@ -50,7 +51,6 @@
 
   &--challenge {
     background: url('../public/images/brush-stroke-green.svg') no-repeat center;
-
   }
 
   &--teamwork {
