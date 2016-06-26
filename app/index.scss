@@ -1,11 +1,11 @@
-// General
+  // General
 
 // Font
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600,700,300italic);
 
 // partials
 @import 'sidebar';
-@import 'about';
+@import 'home';
 @import 'contact';
 @font-face {
   font-family: 'CRU-pokawin-Alize';
@@ -31,4 +31,26 @@ a {
 
 #content {
   height: 1000px;
+}
+
+.main__views--transition-appear {
+  opacity: 0.01;
+}
+
+.main__views--transition-appear.main__views--transition-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.main__views--transition-enter {
+  opacity: 0.01;
+}
+
+.main__views--transition-enter.main__views--transition-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.main__views--transition-leave {
+  opacity: 0;
 }
