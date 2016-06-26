@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 import { createHistory, useBasename } from 'history';
 import { IndexRoute, Router, Route } from 'react-router';
 import Main from './components/main';
+import Home from './routes/home';
 import About from './routes/about';
 import Read from './routes/read';
 import Jobs from './routes/jobs';
@@ -17,7 +18,8 @@ const history = useBasename(createHistory)({
 ReactDom.render(
     <Router history={history}>
         <Route path="/" component={Main}>
-            <IndexRoute component={About} />
+            <IndexRoute component={Home} />
+            <Route path="about" component={About} />
             <Route path="inspire" component={Inspire} />
             <Route path="jobs" component={Jobs} />
             <Route path="read" component={Read} />
