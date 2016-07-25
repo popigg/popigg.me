@@ -4,7 +4,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div>
-                <h1 className="contact__header">find me</h1>
+                <h1 className="contact__header">contact</h1>
                 <p>
                   <a href="https://github.com/popigg" target="_blank">
                     <span className="contact__social--github">&nbsp;</span>
