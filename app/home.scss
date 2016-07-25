@@ -4,44 +4,34 @@
   font-size: 2rem;
 
   &--highlight {
-    font-size: 3rem;
+    font-size: 3.6rem;
+  }
+
+  p {
+    font-size: 1.3rem;
   }
 }
 
 .home__item {
-  margin-left: 2rem;
   div {
-    background-size: 439px 136px;
-    height: 136px;
+    background-size: 300px 94px;
+    height: 104px;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
 
     h3 {
       font-family: 'CRU-pokawin-Alize';
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: normal;
       margin-top: 1rem;
       margin-bottom: 0rem;
-      transition: font-size 0.35s;
     }
 
     p {
       font-weight: 300;
-      opacity: 0;
-    	transform: translate3d(0,10px,0);
-      transition: opacity 0.35s, transform 0.35s;
-    }
-
-    &:hover {
-      cursor: pointer;
-      h3 {
-        font-size: 3.5rem;
-      }
-      p {
-        font-size: 1.2rem;
-        display: block;
-        margin-top: -0.5rem;
-        opacity: 1;
-      	transform: translate3d(0,0,0);
-      }
+      font-size: 1rem;
+      padding: 1rem 2.5rem 0 2.5rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -63,9 +53,5 @@
 
   &--freedom {
     background: url('../public/images/brush-stroke-pink.svg') no-repeat center;
-  }
-
-  &--description {
-    display: none;
   }
 }
