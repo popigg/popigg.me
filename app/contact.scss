@@ -3,8 +3,15 @@
 
 .contact {
   &__header {
-    margin-top: 4rem;
-    font-size: 2rem;
+    margin-top: 2rem 0 2rem 0;
+    height: 107px;
+    font-size: 6rem;
+    padding-top: 1rem;
+    font-family: 'CRU-pokawin-Alize';
+    font-weight: normal;
+    background: url('../public/images/brush-stroke-pink.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   &__social {
