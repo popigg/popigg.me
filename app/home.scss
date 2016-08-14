@@ -12,46 +12,55 @@
   }
 }
 
-.home__item {
-  div {
-    background-size: 300px 94px;
-    height: 104px;
-    margin-bottom: 6rem;
-    margin-top: 3rem;
+.home__skills {
 
-    h3 {
-      font-family: 'CRU-pokawin-Alize';
-      font-size: 5rem;
-      font-weight: normal;
-      margin-top: 1rem;
-      margin-bottom: 0rem;
+  margin-bottom: 2rem;
+
+  .home__item {
+    div {
+      background-size: 300px 94px;
+      height: 104px;
+      margin-bottom: 6rem;
+      margin-top: 3rem;
+
+      h3 {
+        font-family: 'CRU-pokawin-Alize';
+        font-size: 5rem;
+        font-weight: normal;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 1rem 2.5rem 0 2.5rem;
+        margin-bottom: 1rem;
+      }
     }
 
-    p {
-      font-weight: 300;
-      font-size: 1rem;
-      padding: 1rem 2.5rem 0 2.5rem;
-      margin-bottom: 1rem;
+    &--creativity {
+      background: url('../public/images/brush-stroke-orange.svg') no-repeat center;
+    }
+
+    &--challenge {
+      background: url('../public/images/brush-stroke-green.svg') no-repeat center;
+    }
+
+    &--teamwork {
+      background: url('../public/images/brush-stroke-blue.svg') no-repeat center;
+    }
+
+    &--poc {
+      background: url('../public/images/brush-stroke-yellow.svg') no-repeat center;
+    }
+
+    &--freedom {
+      background: url('../public/images/brush-stroke-pink.svg') no-repeat center;
     }
   }
+}
 
-  &--creativity {
-    background: url('../public/images/brush-stroke-orange.svg') no-repeat center;
-  }
-
-  &--challenge {
-    background: url('../public/images/brush-stroke-green.svg') no-repeat center;
-  }
-
-  &--teamwork {
-    background: url('../public/images/brush-stroke-blue.svg') no-repeat center;
-  }
-
-  &--poc {
-    background: url('../public/images/brush-stroke-yellow.svg') no-repeat center;
-  }
-
-  &--freedom {
-    background: url('../public/images/brush-stroke-pink.svg') no-repeat center;
-  }
+.home__footer {
+  margin-bottom: 4rem;
 }

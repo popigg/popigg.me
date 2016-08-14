@@ -5,7 +5,8 @@
   padding-top: 3rem;
   font-size: 1.4rem;
   font-weight: 600;
-  height: 1100px;
+  height: auto;
+  min-height: 60rem;
 
   &__link {
     color: rgb(255, 73, 0);
