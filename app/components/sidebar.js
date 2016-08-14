@@ -6,9 +6,7 @@ import circle from '../../public/images/grunge-circle-3.svg';
 class Sidebar extends React.Component {
 
   twistThrobber() {
-    console.log('ouch!!!');
-    let throbber = document.getElementById('throbber');
-    console.log('Throbber ===>', throbber);
+    let throbber = document.getElementById('throbber');    
     if (throbber) {
       TweenMax.to(throbber,2, {rotation:"-=10_cw"});
     }
