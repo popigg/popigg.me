@@ -24,8 +24,9 @@
   "homepage": "https://github.com/popigg/popigg.me#readme",
   "dependencies": {
     "co-views": "^2.1.0",
+    "gsap": "^1.19.0",
     "history": "^1.17.0",
-    "koa": "^1.1.2",
+    "koa": "^1.1.2",    
     "react": "^0.14.8",
     "react-addons-css-transition-group": "^0.14.8",
     "react-dom": "^0.14.8",
