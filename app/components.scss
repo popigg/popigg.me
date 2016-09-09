@@ -1,0 +1,14 @@
+.page__title {
+  margin: 2rem 0 2rem 0;
+  height: 107px;
+  font-size: 6rem;
+  padding-top: 1rem;
+  font-family: 'CRU-pokawin-Alize';
+  font-weight: normal;
+
+  &--pink {
+    background: url('../public/images/brush-stroke-pink.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
