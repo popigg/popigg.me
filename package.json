@@ -4,9 +4,7 @@
   "description": "personal page",
   "main": "app.js",
   "scripts": {
-    "webpack-server": "node_modules/.bin/webpack-dev-server --hot --progress --colors",
-    "web-server": "NODE_ENV=development node server",
-    "start": "npm run webpack-server & npm run web-server",
+    "start": "NODE_ENV=development node server",
     "build": "NODE_ENV=production node_modules/.bin/webpack -p --config webpack.production.config.js"
   },
   "repository": {
@@ -23,10 +21,8 @@
   },
   "homepage": "https://github.com/popigg/popigg.me#readme",
   "dependencies": {
-    "co-views": "^2.1.0",
     "gsap": "^1.19.0",
     "history": "^1.17.0",
-    "koa": "^1.1.2",    
     "react": "^0.14.8",
     "react-addons-css-transition-group": "^0.14.8",
     "react-dom": "^0.14.8",
