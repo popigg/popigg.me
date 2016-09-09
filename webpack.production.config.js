@@ -2,7 +2,7 @@ module.exports = {
     entry: getEntrySources(['./app/index.js']),
     output: {
         publicPath: '/public/',
-        filename: 'public/bundle.js'
+        filename: 'bundle.js'
     },
     devtool: 'eval',
     module: {
