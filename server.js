@@ -1,17 +1,17 @@
 'use strict';
-var koa = require('koa');
-var views = require('co-views');
-var app     = koa();
+var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
+var config = require('./webpack.config');
 
+new WebpackDevServer(webpack(config), {
+  publicPath: config.output.publicPath,
+  pathName: '/public',
+  hot: true,
+  historyApiFallback: true,
+}).listen(3000, 'localhost', function (err, result) {
+  if (err) {
+    return console.log(err);
+  }
 
-if (process.env.NODE_ENV == 'development') {
-  var render = views(__dirname + '/', { map: { html: 'swig' }});
-} else {
-  var render = views(__dirname + '/public', { map: { html: 'swig' }});
-}
-
-app.use(function *(){
-    this.body = yield render('index');
+  console.log(`Listening at http://localhost:3000`);
 });
-
-app.listen(8888);
