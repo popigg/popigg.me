@@ -4,8 +4,8 @@ var path = require('path');
 module.exports = {
     entry: getEntrySources(['./app/index.js']),
     output: {
-        path: path.join(__dirname, 'dist'),
-        publicPath: '/public/',
+        path: path.join(__dirname),
+        publicPath: '/',
         filename: 'bundle.js'
     },
     devtool: 'eval',
