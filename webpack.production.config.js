@@ -1,8 +1,11 @@
+var path = require('path');
+
 module.exports = {
-    entry: getEntrySources(['./app/index.js']),
+    entry: './app/index.js',
     output: {
-        publicPath: '/public/',
-        filename: 'bundle.js'
+      path: path.join(__dirname),
+      publicPath: '/',
+      filename: 'bundle.js'
     },
     devtool: 'eval',
     module: {
@@ -42,12 +45,3 @@ module.exports = {
         ]
     }
 };
-
-function getEntrySources(sources) {
-    if (process.env.NODE_ENV !== 'production') {
-        sources.push('webpack-dev-server/client?http://localhost:8080');
-        sources.push('webpack/hot/only-dev-server');
-    }
-
-    return sources;
-}
