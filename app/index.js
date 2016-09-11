@@ -12,7 +12,7 @@ import Inspire from './routes/inspire';
 import Contact from './routes/contact';
 
 const history = useBasename(createHistory)({
-    basename: '/public/index.html'
+    basename: '/'
 });
 
 ReactDom.render(
