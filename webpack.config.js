@@ -5,7 +5,7 @@ module.exports = {
   entry: getEntrySources(['./app/index.js']),
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '/dist',
+    publicPath: '/dist/',
     filename: 'bundle.js'
   },
   devtool: 'eval',
