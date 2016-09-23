@@ -1,7 +1,9 @@
   // General
 
 // Font
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600,700,300italic);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(https://fonts.googleapis.com/css?family=Raleway) ;
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 
 // partials
 @import 'sidebar';
@@ -9,14 +11,10 @@
 @import 'about';
 @import 'contact';
 @import 'components';
-@font-face {
-  font-family: 'CRU-pokawin-Alize';
-  src:  url('../public/fonts/CRU-pokawin-Alize-pencil-regular.ttf') format('truetype');
-}
 
 body {
   margin:0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web';
   font-size: 1.2rem;
   color: rgba(0, 0, 0, .8);
   font-weight: 300;
