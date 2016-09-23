@@ -6,7 +6,7 @@ class Contact extends React.Component {
         return (
             <div>
                 <PageTitle title="contact" overlineColor='pink'/>
-                <div className="contact__social start-xs">
+                <div className="contact__social col-xs-offset-4 start-xs">
                   <p>
                     <a href="https://github.com/popigg" target="_blank">
                       <span className="contact__social--github">&nbsp;</span>

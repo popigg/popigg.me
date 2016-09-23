@@ -6,7 +6,7 @@ class About extends React.Component {
     render() {
         return (
             <div>
-                <img src={imgSrc} className="row col-xs-10 about__image--header" />
+                <img src={imgSrc} className="row col-xs-10" />
                 <PageTitle title="about" overlineColor='yellow'/>
                 <div className="about__content start-xs">
 
