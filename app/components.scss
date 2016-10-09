@@ -5,6 +5,7 @@
   padding-top: 1rem;
   font-family: 'Rock Salt';
   font-weight: normal;
+  color: #F9FCFD;
 
   &--pink {
     background: url('../public/images/brush-stroke-pink.svg') no-repeat;
@@ -14,6 +15,24 @@
 
   &--yellow {
     background: url('../public/images/brush-stroke-yellow.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--orange {
+    background: url('../public/images/brush-stroke-orange.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--green {
+    background: url('../public/images/brush-stroke-green.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--blue {
+    background: url('../public/images/brush-stroke-blue.svg') no-repeat;
     background-position: center;
     background-size: contain;
   }
