@@ -18,14 +18,15 @@ body {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, .8);
   font-weight: 300;
+  background-color: #F9FCFD;
 }
 
 a {
-  color: rgb(16, 151, 255);
+  color: #62A8C6;
   text-decoration: none;
   font-weight: 600;
   &:hover {
-    color: rgba(16, 151, 255, 0.45);
+    color: #08638B;
   }
 }
 

@@ -1,11 +1,26 @@
 // About
 .home__header {
-  margin: 3rem 2rem 0rem 2rem;
+  margin: 5rem 2rem 3rem 2rem;
   font-family: 'Titillium Web';
   font-size: 4.2rem;
+  line-height: 5rem;
 
   &--orange {
-    color: #ff4900; // rgb(255, 128, 0);
+    color: #FF5126;
+  }
+}
+
+.home__linker {
+  margin-bottom: 12rem;
+  cursor: pointer;
+
+  span {
+    font-size: 1.6rem;
+  }
+
+  &--arrow {
+    margin-top: -5rem;
+    width: 3rem;
   }
 }
 
@@ -14,9 +29,7 @@
 
   .home__item {
     div {
-      background-size: 300px 94px;
-      height: 104px;
-      margin-bottom: 6rem;
+      margin-bottom: 4.5rem;
 
       h3 {
         font-family: 'Rock Salt'; // 'CRU-pokawin-Alize';
@@ -24,6 +37,7 @@
         font-weight: normal;
         margin-top: 1rem;
         margin-bottom: 0rem;
+        color: #F9FCFD;
       }
 
       p {
@@ -37,28 +51,38 @@
     }
 
     &--creativity {
-      background: url('../public/images/brush-stroke-orange.svg') no-repeat center;
+      background: url('../public/images/brush-stroke-banner-5.svg') no-repeat center;
+      background-size: 300px 240px;
+      height: 104px;
     }
 
     &--challenge {
-      background: url('../public/images/brush-stroke-green.svg') no-repeat center;
+      background: url('../public/images/brush-stroke-banner-4.svg') no-repeat center;
+      background-size: 300px 240px;
+      height: 104px;
     }
 
     &--teamwork {
-      background: url('../public/images/brush-stroke-blue.svg') no-repeat center;
+      background: url('../public/images/brush-stroke-banner-8.svg') no-repeat center;
+      background-size: 300px 404px;
+      height: 130px;
     }
 
     &--poc {
-      background: url('../public/images/brush-stroke-yellow.svg') no-repeat center;
+      background: url('../public/images/brush-stroke-banner-2.svg') no-repeat center;
+      background-size: 300px 240px;
+      height: 120px;
     }
 
     &--freedom {
-      background: url('../public/images/brush-stroke-pink.svg') no-repeat center;
+      background: url('../public/images/brush-stroke-banner-3.svg') no-repeat center;
+      background-size: 300px 240px;
+      height: 104px;
     }
   }
 }
 
 .home__footer {
-  margin: 5rem 3rem 4rem 3rem;
+  margin: 1rem 3rem 1.3rem 3rem;
   font-size: 2rem;
 }

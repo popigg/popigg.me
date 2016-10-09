@@ -10,12 +10,12 @@
   min-height: 60rem;
 
   &__link {
-    color: rgb(255, 73, 0);
+    color: #000000;
     text-decoration: none;
     font-weight: 300;
 
     &:hover {
-      color: rgb(255, 73, 0);
+      color: #000000;
       &:before {
         opacity: 1;
         transform: translateX(0);
@@ -44,7 +44,7 @@
     }
 
     &--active {
-      color: black ;
+      color: #FF5126 ;
     }
   }
 
